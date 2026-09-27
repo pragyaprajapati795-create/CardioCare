@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --color-primary-50:  #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-400: #38bdf8;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+  --color-primary-800: #075985;
+  --color-primary-900: #0c4a6e;
+
+  --color-danger-50:  #fff1f2;
+  --color-danger-100: #ffe4e6;
+  --color-danger-500: #f43f5e;
+  --color-danger-600: #e11d48;
+  --color-danger-700: #be123c;
+
+  --color-success-50:  #f0fdf4;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+
+  --color-accent-500: #8b5cf6;
+  --color-accent-600: #7c3aed;
+
+  --color-warning-500: #f59e0b;
+}
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    @apply bg-slate-950 text-slate-100;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  /* ── Cards ── */
+  .card {
+    @apply bg-slate-900 border border-slate-800 rounded-2xl;
+  }
+  .card-glass {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    @apply border border-slate-700/50 rounded-2xl;
+  }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-500 text-white font-semibold px-5 py-2.5 rounded-xl
+           transition-all duration-200 shadow-lg shadow-primary-900/30
+           active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-4 py-2 rounded-xl
+           border border-slate-700 transition-all duration-200 active:scale-95;
+  }
+  .btn-danger {
+    @apply bg-danger-600 hover:bg-danger-700 text-white font-semibold px-4 py-2 rounded-xl
+           transition-all duration-200 active:scale-95;
+  }
+
+  /* ── Inputs ── */
+  .input {
+    @apply w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm
+           text-slate-100 placeholder-slate-500
+           focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20
+           transition-all duration-150;
+  }
+  .select {
+    @apply w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-sm
+           text-slate-100 placeholder-slate-500 appearance-none cursor-pointer
+           focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20
+           transition-all duration-150;
+  }
+  .label {
+    @apply block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1.5;
+  }
+
+  /* ── Badges ── */
+  .badge-red   { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-danger-500/10 text-danger-500 ring-1 ring-danger-500/20; }
+  .badge-green { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-success-500/10 text-success-500 ring-1 ring-success-500/20; }
+  .badge-blue  { @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-primary-500/10 text-primary-400 ring-1 ring-primary-500/20; }
+  .badge-purple{ @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-accent-500/10 text-accent-500 ring-1 ring-accent-500/20; }
+
+  /* ── Spinner ── */
+  .spinner {
+    @apply animate-spin rounded-full border-2 border-slate-600 border-t-primary-500;
+  }
+
+  /* ── Table ── */
+  .table-header { @apply bg-slate-800/60 text-xs font-semibold text-slate-400 uppercase tracking-wider; }
+  .table-row    { @apply border-t border-slate-800 hover:bg-slate-800/40 transition-colors; }
+  .table-cell   { @apply py-3 px-4 text-sm text-slate-300; }
+
+  /* ── Gradient text ── */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  }
+
+  /* ── KPI Card ── */
+  .kpi-card {
+    @apply bg-slate-900 border border-slate-800 rounded-2xl p-6 relative overflow-hidden cursor-default
+           hover:border-slate-600 transition-all duration-300;
+  }
+  .kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0ea5e9, #818cf8);
+  }
+
+  /* ── Sidebar ── */
+  .sidebar-link {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium
+           text-slate-400 hover:text-slate-100 hover:bg-slate-800/70
+           transition-all duration-200 cursor-pointer;
+  }
+  .sidebar-link.active {
+    @apply bg-primary-600/20 text-primary-400 ring-1 ring-primary-500/30;
+  }
+
+  /* ── Section title ── */
+  .section-title {
+    @apply text-xl font-bold text-slate-100;
+  }
+  .section-sub {
+    @apply text-sm text-slate-400 mt-1;
+  }
+
+  /* ── Code block ── */
+  .code-block {
+    @apply bg-slate-950 border border-slate-800 rounded-xl p-4
+           font-mono text-sm text-emerald-400 overflow-x-auto;
+  }
+}

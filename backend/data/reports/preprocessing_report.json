@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-09-26T19:29:35.494904",
+  "input_records": 70000,
+  "output_records": 68616,
+  "total_removed": 1384,
+  "removal_log": {
+    "invalid_systolic_bp": 228,
+    "invalid_diastolic_bp": 997,
+    "inverted_bp": 103,
+    "invalid_height": 26,
+    "invalid_weight": 6,
+    "feature_duplicates": 24
+  },
+  "final_columns": [
+    "patient_id",
+    "age",
+    "age_years",
+    "gender",
+    "height",
+    "weight",
+    "bmi",
+    "systolic_bp",
+    "diastolic_bp",
+    "bp_category",
+    "cholesterol",
+    "glucose",
+    "smoking",
+    "alcohol",
+    "physical_activity",
+    "cardio"
+  ],
+  "class_balance": {
+    "no_cvd": 34664,
+    "cvd": 33952
+  },
+  "sample_record": {
+    "patient_id": "P10001",
+    "age": 18393,
+    "age_years": 50.4,
+    "gender": 2,
+    "height": 168,
+    "weight": 62.0,
+    "bmi": 21.97,
+    "systolic_bp": 110,
+    "diastolic_bp": 80,
+    "bp_category": "Stage1_HTN",
+    "cholesterol": 1,
+    "glucose": 1,
+    "smoking": 0,
+    "alcohol": 0,
+    "physical_activity": 1,
+    "cardio": 0
+  }
+}

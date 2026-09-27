@@ -1,0 +1,72 @@
+# ═══════════════════════════════════════════════════════════════
+# CardioCare — .gitignore
+# ═══════════════════════════════════════════════════════════════
+
+# ── Python ──────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environments ─────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Environment Variables — NEVER commit ─────────────────────────
+.env
+.env.local
+.env.production
+*.env
+
+# ── IDE ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Jupyter ──────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Logs ─────────────────────────────────────────────────────────
+*.log
+logs/
+app.log
+
+# ── ML Models — large binary files ───────────────────────────────
+ml/saved_models/*.pkl
+ml/saved_models/*.joblib
+backend/app/ml/saved_models/*.pkl
+backend/app/ml/saved_models/*.joblib
+
+# ── Raw Dataset — too large for GitHub ───────────────────────────
+# Upload to Kaggle/GDrive and link in README instead
+backend/data/raw/
+ml/notebooks/.ipynb_checkpoints/
+
+# ── Generated Reports ────────────────────────────────────────────
+backend/data/reports/*.html
+
+# ── Node / React ──────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# ── Testing / Coverage ───────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+pytest_cache/
+
+# ── Docker ───────────────────────────────────────────────────────
+.docker/

@@ -1,0 +1,439 @@
+{
+  "generated_at": "2026-09-26T19:24:13.397286",
+  "dataset_file": "C:\\Users\\Asus\\Downloads\\cardio Care\\cardiocare\\backend\\data\\raw\\cardio_train.csv",
+  "total_records": 70000,
+  "total_columns": 13,
+  "structure": {
+    "id": {
+      "dtype": "int64",
+      "unique_values": 70000,
+      "sample": "0"
+    },
+    "age": {
+      "dtype": "int64",
+      "unique_values": 8076,
+      "sample": "18393"
+    },
+    "gender": {
+      "dtype": "int64",
+      "unique_values": 2,
+      "sample": "2"
+    },
+    "height": {
+      "dtype": "int64",
+      "unique_values": 109,
+      "sample": "168"
+    },
+    "weight": {
+      "dtype": "float64",
+      "unique_values": 287,
+      "sample": "62.0"
+    },
+    "ap_hi": {
+      "dtype": "int64",
+      "unique_values": 153,
+      "sample": "110"
+    },
+    "ap_lo": {
+      "dtype": "int64",
+      "unique_values": 157,
+      "sample": "80"
+    },
+    "cholesterol": {
+      "dtype": "int64",
+      "unique_values": 3,
+      "sample": "1"
+    },
+    "gluc": {
+      "dtype": "int64",
+      "unique_values": 3,
+      "sample": "1"
+    },
+    "smoke": {
+      "dtype": "int64",
+      "unique_values": 2,
+      "sample": "0"
+    },
+    "alco": {
+      "dtype": "int64",
+      "unique_values": 2,
+      "sample": "0"
+    },
+    "active": {
+      "dtype": "int64",
+      "unique_values": 2,
+      "sample": "1"
+    },
+    "cardio": {
+      "dtype": "int64",
+      "unique_values": 2,
+      "sample": "0"
+    }
+  },
+  "missing_values": {
+    "id": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "age": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "gender": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "height": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "weight": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "ap_hi": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "ap_lo": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cholesterol": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "gluc": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "smoke": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "alco": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "active": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cardio": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    }
+  },
+  "duplicates": {
+    "full_row_duplicates": 0,
+    "feature_only_duplicates": 24,
+    "duplicate_ids": 0
+  },
+  "unique_values": {
+    "smoke": {
+      "unique_values": [
+        0,
+        1
+      ],
+      "status": "OK"
+    },
+    "alco": {
+      "unique_values": [
+        0,
+        1
+      ],
+      "status": "OK"
+    },
+    "active": {
+      "unique_values": [
+        0,
+        1
+      ],
+      "status": "OK"
+    },
+    "cardio": {
+      "unique_values": [
+        0,
+        1
+      ],
+      "status": "OK"
+    },
+    "cholesterol": {
+      "unique_values": [
+        1,
+        2,
+        3
+      ],
+      "status": "OK"
+    },
+    "gluc": {
+      "unique_values": [
+        1,
+        2,
+        3
+      ],
+      "status": "OK"
+    },
+    "gender": {
+      "unique_values": [
+        1,
+        2
+      ],
+      "status": "OK"
+    },
+    "age": {
+      "min": 10798.0,
+      "max": 23713.0,
+      "unique_count": 8076
+    },
+    "height": {
+      "min": 55.0,
+      "max": 250.0,
+      "unique_count": 109
+    },
+    "weight": {
+      "min": 10.0,
+      "max": 200.0,
+      "unique_count": 287
+    },
+    "ap_hi": {
+      "min": -150.0,
+      "max": 16020.0,
+      "unique_count": 153
+    },
+    "ap_lo": {
+      "min": -70.0,
+      "max": 11000.0,
+      "unique_count": 157
+    }
+  },
+  "age": {
+    "min_years": 29.6,
+    "max_years": 64.9,
+    "mean_years": 53.3,
+    "median_years": 53.94,
+    "impossible_count": 0,
+    "age_group_distribution": {
+      "Under 30": {
+        "count": 3,
+        "pct": "0.00%"
+      },
+      "30 - 39": {
+        "count": 1881,
+        "pct": "2.69%"
+      },
+      "40 - 49": {
+        "count": 19773,
+        "pct": "28.25%"
+      },
+      "50 - 59": {
+        "count": 35563,
+        "pct": "50.80%"
+      },
+      "60 - 69": {
+        "count": 12780,
+        "pct": "18.26%"
+      },
+      "70 and over": {
+        "count": 0,
+        "pct": "0.00%"
+      }
+    }
+  },
+  "blood_pressure": {
+    "systolic": {
+      "min": -150,
+      "max": 16020,
+      "mean": 128.82,
+      "median": 120.0,
+      "invalid_count": 228
+    },
+    "diastolic": {
+      "min": -70,
+      "max": 11000,
+      "mean": 96.63,
+      "median": 80.0,
+      "invalid_count": 1012
+    },
+    "inverted_bp_count": 1236,
+    "bp_categories": {
+      "Normal (SBP<120 & DBP<80)": {
+        "count": 9556
+      },
+      "Elevated (SBP 120-129)": {
+        "count": 3109
+      },
+      "Stage 1 HTN (SBP 130-139 or DBP 80-89)": {
+        "count": 39770
+      },
+      "Stage 2 HTN (SBP>=140 or DBP>=90)": {
+        "count": 23547
+      }
+    }
+  },
+  "anthropometrics": {
+    "height": {
+      "min": 55,
+      "max": 250,
+      "mean": 164.36,
+      "invalid_count": 29
+    },
+    "weight": {
+      "min": 10.0,
+      "max": 200.0,
+      "mean": 74.21,
+      "invalid_count": 7
+    },
+    "bmi": {
+      "min": 3.47,
+      "max": 298.67,
+      "mean": 27.56,
+      "extreme_count": 72,
+      "distribution": {
+        "Underweight (<18.5)": 650,
+        "Normal (18.5 - 24.9)": 25790,
+        "Overweight (25 - 29.9)": 25086,
+        "Obese (30+)": 18474
+      }
+    }
+  },
+  "categoricals": {
+    "gender": {
+      "Female": {
+        "value": 1,
+        "count": 45530,
+        "pct": "65.04%"
+      },
+      "Male": {
+        "value": 2,
+        "count": 24470,
+        "pct": "34.96%"
+      }
+    },
+    "cholesterol": {
+      "Normal": {
+        "value": 1,
+        "count": 52385,
+        "pct": "74.84%"
+      },
+      "Above Normal": {
+        "value": 2,
+        "count": 9549,
+        "pct": "13.64%"
+      },
+      "Well Above Normal": {
+        "value": 3,
+        "count": 8066,
+        "pct": "11.52%"
+      }
+    },
+    "gluc": {
+      "Normal": {
+        "value": 1,
+        "count": 59479,
+        "pct": "84.97%"
+      },
+      "Above Normal": {
+        "value": 2,
+        "count": 5190,
+        "pct": "7.41%"
+      },
+      "Well Above Normal": {
+        "value": 3,
+        "count": 5331,
+        "pct": "7.62%"
+      }
+    },
+    "smoke": {
+      "Non-Smoker": {
+        "value": 0,
+        "count": 63831,
+        "pct": "91.19%"
+      },
+      "Smoker": {
+        "value": 1,
+        "count": 6169,
+        "pct": "8.81%"
+      }
+    },
+    "alco": {
+      "Non-Drinker": {
+        "value": 0,
+        "count": 66236,
+        "pct": "94.62%"
+      },
+      "Drinker": {
+        "value": 1,
+        "count": 3764,
+        "pct": "5.38%"
+      }
+    },
+    "active": {
+      "Inactive": {
+        "value": 0,
+        "count": 13739,
+        "pct": "19.63%"
+      },
+      "Physically Active": {
+        "value": 1,
+        "count": 56261,
+        "pct": "80.37%"
+      }
+    }
+  },
+  "target": {
+    "no_cvd": 35021,
+    "cvd": 34979,
+    "ratio": 0.9988,
+    "balance_status": "BALANCED",
+    "no_cvd_pct": "50.03%",
+    "cvd_pct": "49.97%"
+  },
+  "outliers_iqr": {
+    "age": {
+      "Q1": 17664.0,
+      "Q3": 21327.0,
+      "IQR": 3663.0,
+      "lower_bound": 12169.5,
+      "upper_bound": 26821.5,
+      "outlier_count": 4,
+      "outlier_pct": 0.0057
+    },
+    "height": {
+      "Q1": 159.0,
+      "Q3": 170.0,
+      "IQR": 11.0,
+      "lower_bound": 142.5,
+      "upper_bound": 186.5,
+      "outlier_count": 519,
+      "outlier_pct": 0.7414
+    },
+    "weight": {
+      "Q1": 65.0,
+      "Q3": 82.0,
+      "IQR": 17.0,
+      "lower_bound": 39.5,
+      "upper_bound": 107.5,
+      "outlier_count": 1819,
+      "outlier_pct": 2.5986
+    },
+    "ap_hi": {
+      "Q1": 120.0,
+      "Q3": 140.0,
+      "IQR": 20.0,
+      "lower_bound": 90.0,
+      "upper_bound": 170.0,
+      "outlier_count": 1435,
+      "outlier_pct": 2.05
+    },
+    "ap_lo": {
+      "Q1": 80.0,
+      "Q3": 90.0,
+      "IQR": 10.0,
+      "lower_bound": 65.0,
+      "upper_bound": 105.0,
+      "outlier_count": 4632,
+      "outlier_pct": 6.6171
+    }
+  }
+}
